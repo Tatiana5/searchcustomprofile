@@ -1,0 +1,14 @@
+services:
+    tatiana5.searchcustomprofile.listener:
+        class: tatiana5\searchcustomprofile\event\listener
+        arguments:
+            - '@auth'
+            - '@dbal.conn'
+            - '@template'
+            - '@request'
+            - '@user'
+            - '@profilefields.manager'
+            - '%core.root_path%'
+            - '%core.php_ext%'
+        tags:
+            - { name: event.listener }

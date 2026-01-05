@@ -1,0 +1,9 @@
+<!-- BEGIN profile_fields -->
+	<!-- IF profile_fields.S_ROW_COUNT is even -->
+	<dl>
+		<dt><label<!-- IF profile_fields.FIELD_ID --> for="{profile_fields.FIELD_ID}"<!-- ENDIF -->>{profile_fields.LANG_NAME}:</label></dt>
+		<!-- IF profile_fields.ERROR --><dd class="error">{profile_fields.ERROR}</dd><!-- ENDIF -->
+		<dd>{profile_fields.FIELD}</dd>
+	</dl>
+	<!-- ENDIF -->
+<!-- END profile_fields -->
